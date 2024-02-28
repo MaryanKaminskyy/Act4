@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Objectes en moviment</title>
+	<script src="classeObjecteEnMoviment.js"></script>
+</head>
+
+<body>
+	<h1>Objectes en moviment</h1>
+	<script>
+		var objecte1 = new ObjecteEnMoviment("pilota.png", 100);
+		var objecte2 = new ObjecteEnMoviment("sun.png", 110);
+		var objecte3 = new ObjecteEnMoviment("smile.png", 170);
+
+		setInterval(() => {
+			objecte1.moure();
+			objecte2.moure();
+			objecte3.moure();
+		}, 100);
+	</script>
+</body>
+
+</html>
